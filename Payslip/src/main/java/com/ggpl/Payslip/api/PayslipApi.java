@@ -39,7 +39,10 @@ public class PayslipApi {
 	public String test() {
 		return "Working";
 	}
-	 
+	@GetMapping("/maventest")
+	public String test2() {
+		return "Added maven test";
+	}
 	@PostMapping(value = "/add" ,  consumes="application/json")
 	 public ResponseEntity<List<UserDto>> addUser(@RequestBody UserDto dto) throws PayslipEXception {
  
